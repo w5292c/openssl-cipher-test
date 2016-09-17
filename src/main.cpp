@@ -29,7 +29,6 @@
 #include <errno.h>
 #include <stdio.h>
 #include <assert.h>
-#include <openssl/bn.h>
 
 const char TheTestKey[] = {
   0x55, 0x8c, 0x50, 0xbd, 0xe3, 0x5c, 0x71, 0x52,

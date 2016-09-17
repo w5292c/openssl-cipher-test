@@ -7,12 +7,12 @@ link_directories ( ${OPENSSL_LINK_DIRS} )
 
 set ( SRC_TOP "${CMAKE_SOURCE_DIR}/src/" )
 
-set ( BN_SOURCES
+set ( CIPHER_SOURCES
   ${SRC_TOP}/main.cpp
   ${SRC_TOP}/cipher.cpp
 )
 
-add_executable ( openssl-cipher-test ${BN_SOURCES} )
+add_executable ( openssl-cipher-test ${CIPHER_SOURCES} )
 
 target_include_directories ( openssl-cipher-test PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} )
 target_link_libraries ( openssl-cipher-test "-pthread" ${OPENSSL_LIBRARIES} )
