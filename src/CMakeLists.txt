@@ -9,6 +9,7 @@ set ( SRC_TOP "${CMAKE_SOURCE_DIR}/src/" )
 
 set ( BN_SOURCES
   ${SRC_TOP}/main.cpp
+  ${SRC_TOP}/cipher.cpp
 )
 
 add_executable ( openssl-cipher-test ${BN_SOURCES} )
